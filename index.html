@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIST Infrastructure Survey</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        h1 { color: #333; }
-        /* This container ensures the form has enough space */
-        .typeform-container {
-            width: 100%;
-            max-width: 800px;
-            min-height: 500px;
-        }
-    </style>
+    <title>MIST | Urban Climate Infrastructure</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>MIST Urban Cooling Survey</h1>
-    <p>Please share your feedback to help us improve public bus stand infrastructure.</p>
+    <!-- Ambient Liquid Background -->
+    <div class="liquid-ambient-container">
+        <div class="liquid-orb orb-cyan"></div>
+        <div class="liquid-orb orb-purple"></div>
+        <div class="liquid-orb orb-blue"></div>
+    </div>
 
-    <!-- Typeform Embed -->
-    <div data-tf-live="01KWRHHAXMXW1EHMQ1QR3MND0Y" class="typeform-container"></div>
+    <!-- Main Interface -->
+    <div class="app-shell">
+        <header class="liquid-header">
+            <h1 class="glare-text">MIST INFRASTRUCTURE</h1>
+            <p class="subtitle">Next-Gen Urban Thermal Management</p>
+        </header>
+
+        <section class="liquid-glass-card">
+            <div class="card-glow-edge"></div>
+            <div class="typeform-viewport" data-tf-live="01KWRHHAXMXW1EHMQ1QR3MND0Y"></div>
+        </section>
+
+        <footer class="liquid-footer">
+            <div class="footer-divider"></div>
+            <p class="copyright">© 2026 Etash Jain. All Rights Reserved.</p>
+            <p class="tagline">Advanced Public Climate Systems</p>
+        </footer>
+    </div>
+
     <script src="//embed.typeform.com/next/embed.js"></script>
-
-    <br>
-    <a href="results.html">View Results (Admin Only)</a>
-
+    <script src="script.js"></script>
 </body>
 </html>
