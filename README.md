@@ -21,12 +21,9 @@ Our goal is to transform "dumb" public infrastructure into intelligent, sustaina
 
 ## Project Structure
 - `index.html`: Public-facing data collection survey for community feedback.
-- `results.html`: Password-protected (`VasudhaGOAT`) admin dashboard with dynamic analytics.
-- `assets/`: Folder containing CSS, JS (Chart.js), and project documentation.
 
 ## Getting Started
 1. **Access Survey**: Open `index.html` in any web browser to view the survey.
-2. **Access Data**: Use the admin link at the bottom of the page and enter the password `VasudhaGOAT` to view the analytics dashboard.
 
 ## Sustainability Impact
 MIST is designed to reduce heat-related exhaustion for daily wage workers and commuters, actively reducing the city's overall carbon footprint through smarter public cooling solutions.
