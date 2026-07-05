@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIST Infrastructure Survey</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; max-width: 700px; margin: auto; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 20px; padding: 10px 20px; background: #28a745; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>MIST Urban Cooling Survey</h1>
+    <form>
+        <!-- 1-5 -->
+        <label>1. How often do you use public bus stands?</label>
+        <select><option>Daily</option><option>Weekly</option><option>Rarely</option></select>
+        <label>2. Rate heat discomfort (1-5):</label><input type="range" min="1" max="5">
+        <label>3. How long do you usually wait for a bus?</label><input type="text">
+        <label>4. Do you experience health issues due to heat?</label><select><option>Yes</option><option>No</option></select>
+        <label>5. Are current bus stands well-shaded?</label><select><option>Yes</option><option>No</option></select>
+        <!-- 6-10 -->
+        <label>6. Would you support recycled water usage?</label><select><option>Yes</option><option>No</option></select>
+        <label>7. Are you aware of urban heat islands?</label><select><option>Yes</option><option>No</option></select>
+        <label>8. Is air quality a concern at bus stands?</label><select><option>Yes</option><option>No</option></select>
+        <label>9. Should public cooling be AI-automated?</label><select><option>Yes</option><option>No</option></select>
+        <label>10. Would you trust sensor-based systems?</label><select><option>Yes</option><option>No</option></select>
+        <!-- 11-15 -->
+        <label>11. Are you concerned about water wastage?</label><select><option>Yes</option><option>No</option></select>
+        <label>12. Do you think smart cities need this?</label><select><option>Yes</option><option>No</option></select>
+        <label>13. Should the system show live weather data?</label><select><option>Yes</option><option>No</option></select>
+        <label>14. Is safety a concern at night?</label><select><option>Yes</option><option>No</option></select>
+        <label>15. Should the system be solar-powered?</label><select><option>Yes</option><option>No</option></select>
+        <!-- 16-20 -->
+        <label>16. How important is cleanliness?</label><input type="range" min="1" max="5">
+        <label>17. Would you prefer mist or fans?</label><select><option>Mist</option><option>Fans</option></select>
+        <label>18. Should the system alert for disasters?</label><select><option>Yes</option><option>No</option></select>
+        <label>19. Are you likely to recommend this?</label><select><option>Yes</option><option>No</option></select>
+        <label>20. Any additional suggestions?</label><textarea rows="3"></textarea>
+        
+        <button type="button" onclick="alert('Survey Submitted!')">Submit</button>
+    </form>
+    <br><a href="results.html">View Results</a>
+</body>
+</html>
