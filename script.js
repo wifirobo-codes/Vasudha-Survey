@@ -1,10 +1,4 @@
-/**
- * MIST Infrastructure | UI Logic
- * Handles ambient motion and element reveal
- */
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Reveal animation
     const card = document.querySelector('.liquid-glass-card');
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
@@ -15,12 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transform = 'translateY(0)';
     }, 200);
 
-    // Dynamic logging for console enthusiasts
     console.log("%c MIST System Online ", "background: #38bdf8; color: #000; font-weight: bold;");
     console.log("Interface Architecture: Liquid-Glass v1.0");
 });
 
-// Ambient liquid orb animation keyframes via JS for performance
 const styleSheet = document.createElement("style");
 styleSheet.innerText = `
     @keyframes floatFluid {
