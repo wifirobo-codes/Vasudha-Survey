@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIST Secure Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        #content { display: none; }
+        .chart-container { width: 400px; display: inline-block; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+
+    <div id="login">
+        <h3>Enter Admin Password:</h3>
+        <input type="password" id="passInput">
+        <button onclick="checkPass()">Login</button>
+    </div>
+
+    <div id="content">
+        <h1>MIST Analytics Dashboard</h1>
+        
+        <!-- Bar Chart -->
+        <div class="chart-container"><canvas id="barChart"></canvas></div>
+        <!-- Pie Chart -->
+        <div class="chart-container"><canvas id="pieChart"></canvas></div>
+
+        <!-- Data Table -->
+        <h2>Raw Data Summary</h2>
+        <table>
+            <tr><th>Metric</th><th>Value</th></tr>
+            <tr><td>Total Responses</td><td>150</td></tr>
+            <tr><td>Avg Heat Rating</td><td>4.2/5</td></tr>
+            <tr><td>Support for Recycled Water</td><td>88%</td></tr>
+        </table>
+    </div>
+
+    <script>
+        function checkPass() {
+            if (document.getElementById("passInput").value === "VasudhaGOAT") {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("content").style.display = "block";
+                renderCharts();
+            } else { alert("Incorrect Password!"); }
+        }
+
+        function renderCharts() {
+            new Chart(document.getElementById("barChart"), {
+                type: 'bar',
+                data: { labels: ['Daily', 'Weekly', 'Rarely'], datasets: [{ label: 'Usage Frequency', data: [70, 50, 30], backgroundColor: 'blue' }] }
+            });
+            new Chart(document.getElementById("pieChart"), {
+                type: 'pie',
+                data: { labels: ['Mist', 'Fans'], datasets: [{ data: [120, 30], backgroundColor: ['green', 'red'] }] }
+            });
+        }
+    </script>
+</body>
+</html>
